@@ -1,0 +1,9 @@
+<div class="w-full">
+  <form {{on "submit" this.saveNewList}}>
+    <Input type="text" @value={{this.title}} />
+
+    <button type="submit">Save</button>
+  </form>
+</div>
+
+{{outlet}}
