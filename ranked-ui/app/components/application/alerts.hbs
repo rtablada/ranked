@@ -1,0 +1,7 @@
+<div class="fixed top-0 right-0 -my-2">
+  <ul>
+    {{#each this.alerts.alerts as |alert|}}
+      <Application::Alerts::Alert @alert={{alert}} @remove={{this.removeAlert}}/>
+    {{/each}}
+  </ul>
+</div>

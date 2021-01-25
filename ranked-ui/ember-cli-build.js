@@ -34,5 +34,20 @@ module.exports = function (defaults) {
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
 
-  return require('@embroider/compat').compatBuild(app, Webpack);
+  return require('@embroider/compat').compatBuild(app, Webpack, {
+    packagerOptions: {
+      webpackConfig: {
+        node: {
+          module: 'empty',
+          dgram: 'empty',
+          dns: 'mock',
+          fs: 'empty',
+          http2: 'empty',
+          net: 'empty',
+          tls: 'empty',
+          child_process: 'empty',
+        },
+      },
+    },
+  });
 };

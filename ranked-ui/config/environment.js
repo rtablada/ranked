@@ -17,10 +17,15 @@ module.exports = function (environment) {
       },
     },
 
+    alerts: {
+      timeout: 800,
+    },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
     },
+    FAUNADB_SECRET: 'fnAEAX4_AzACAHjynXqlKzyUF4Y9ddWjkEwm6KKI',
   };
 
   if (environment === 'development') {

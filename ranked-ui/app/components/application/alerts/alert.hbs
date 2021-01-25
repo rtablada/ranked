@@ -1,0 +1,11 @@
+<li
+  {{on "click" (fn @remove @alert)}}
+  class="
+    {{alert-class @alert}}
+    font-medium
+    py-2 px-4 mt-4 mx-2
+    shadow overflow-hidden sm:rounded-lg
+  "
+>
+  {{@alert.message}}
+</li>

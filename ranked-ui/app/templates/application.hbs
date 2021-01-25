@@ -1,3 +1,18 @@
 {{page-title "RankedUi"}}
 
-<h2 class="bg-red-500">Hey</h2>
+<Application::Alerts />
+
+<div class="h-screen bg-gray-100 flex flex-col">
+  <h2 class="bg-gray-900 p-4">
+    <img
+      class="h-12"
+      src="./img/logo.png"
+      alt="Green letter G over blue letter S, ScuffdGames brand">
+  </h2>
+  <div class="flex-1 p-4">
+    <div class="min-w-min m-auto">
+      {{outlet}}
+    </div>
+  </div>
+</div>
+
